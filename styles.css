@@ -185,3 +185,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--brass); outline
   .luxe-table th, .luxe-table td { padding: 10px 10px; font-size: .92rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ---------- Hotel choice cards ---------- */
+.hotel-card { border: 1px solid var(--line); background: var(--white); height: 100%; border-top: 3px solid var(--brass); }
+.hotel-head { background: var(--ink); color: var(--white); padding: 14px 20px; }
+.hotel-head h5 { color: var(--white); margin: 0; font-size: 1.4rem; }
+.hotel-head span { font-size: .9rem; color: var(--brass-light); }
+.hotel-list { list-style: none; margin: 0; padding: 8px 20px 14px; }
+.hotel-list li { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--ink); padding: 9px 0 9px 22px; border-bottom: 1px solid var(--line); position: relative; }
+.hotel-list li:last-child { border-bottom: 0; }
+.hotel-list li::before { content: ""; position: absolute; left: 2px; top: 20px; width: 8px; height: 8px; transform: rotate(45deg); background: var(--brass); }
