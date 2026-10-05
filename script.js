@@ -13,42 +13,35 @@ document.addEventListener("DOMContentLoaded", function () {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom'
   }).addTo(map);
 
-  // 5 Route Pins matching the updated itinerary geographic stops
+  // Route pins matching the updated 7-day itinerary
   const routeStops = [
     {
-      day: "Days 1 & 2 (23rd–24th)",
+      day: "Days 1 – 3",
       title: "Habarana & Sigiriya Region",
-      stay: "Cassandra Culture Resort",
+      stay: "Habarana Village by Cinnamon, Amaya Lake or Kassapa Lion Rock (3 Nights, Half Board)",
       coords: [8.0339, 80.7533],
-      desc: "Late-night arrival (CX 611), Elephant Safari & Traditional Ayurveda massage."
+      desc: "Airport arrival & transfer, Pidurangala, Village Tour, Habarana Safari & Ayurveda Massage."
     },
     {
-      day: "Day 3 (25th)",
-      title: "Sigiriya to Kandy",
-      stay: "Thilanka Kandy",
+      day: "Day 4",
+      title: "Kandy",
+      stay: "Golden Crown, Amaya Boutique Hill or Thilanka Kandy (1 Night, Half Board)",
       coords: [7.2906, 80.6337],
-      desc: "Sigiriya Rock Fortress, Spice Garden lunch, Dambulla Temple, Cultural Show & Temple of Tooth."
+      desc: "Golden Temple / Cave Temple, Spice Garden & Sri Lankan Traditional Cultural Show."
     },
     {
-      day: "Day 4 (26th)",
+      day: "Day 5",
       title: "Nuwara Eliya",
-      stay: "Heaven Seven",
+      stay: "Galway Heights, Araliya Green Hills or Lynden Grove (1 Night, Half Board)",
       coords: [6.9497, 80.7891],
-      desc: "Ramboda Falls, Tea Plantation & Factory tour, Post Office & Seetha Amman Temple."
+      desc: "Botanical Garden, Ramboda Falls, Tea Garden & Factory tour."
     },
     {
-      day: "Day 5 (27th)",
-      title: "Induruwa Beach",
-      stay: "Pandanus Beach Resort",
-      coords: [6.3814, 80.0022],
-      desc: "St. Clair's Waterfall viewpoint, Sea Turtle Hatchery & Beach relaxation."
-    },
-    {
-      day: "Day 6 (28th)",
-      title: "Colombo City Tour & Departure",
-      stay: "Departure Transfer",
-      coords: [6.9271, 79.8612],
-      desc: "Red Mosque, Independence Square & optional Mount Lavinia to Colombo Fort train ride."
+      day: "Days 6 & 7",
+      title: "Colombo / Near Airport",
+      stay: "Marino Beach Colombo, Kingsbury Colombo or Grandbell Hotel (1 Night, Half Board)",
+      coords: [7.1808, 79.8841],
+      desc: "Scenic drive down from the hills, overnight near the airport & departure transfer."
     }
   ];
 
@@ -81,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Draw Dashed Route Line Connecting the Destinations
   const polyline = L.polyline(routeCoords, {
-    color: '#0284c7',
+    color: '#a8843f',
     weight: 4,
-    opacity: 0.85,
+    opacity: 0.9,
     dashArray: '6, 8'
   }).addTo(map);
 
