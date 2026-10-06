@@ -13,35 +13,42 @@ document.addEventListener("DOMContentLoaded", function () {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom'
   }).addTo(map);
 
-  // Route pins matching the updated 7-day itinerary
+  // Route pins matching the exact 7-day itinerary
   const routeStops = [
     {
       day: "Days 1 – 3",
       title: "Habarana & Sigiriya Region",
       stay: "Habarana Village by Cinnamon, Amaya Lake or Kassapa Lion Rock (3 Nights, Half Board)",
       coords: [8.0339, 80.7533],
-      desc: "Airport arrival & transfer, Pidurangala, Village Tour, Habarana Safari & Ayurveda Massage."
+      desc: "Airport arrival & transfer, Sigiriya Rock Fortress, Village Tour, Habarana Safari & Ayurveda Massage."
     },
     {
       day: "Day 4",
       title: "Kandy",
       stay: "Golden Crown, Amaya Boutique Hill or Thilanka Kandy (1 Night, Half Board)",
       coords: [7.2906, 80.6337],
-      desc: "Golden Temple / Cave Temple, Spice Garden & Sri Lankan Traditional Cultural Show."
+      desc: "Golden Temple / Cave Temple, Spice Garden, Temple of the Tooth Relic & Traditional Cultural Show."
     },
     {
       day: "Day 5",
       title: "Nuwara Eliya",
       stay: "Galway Heights, Araliya Green Hills or Lynden Grove (1 Night, Half Board)",
       coords: [6.9497, 80.7891],
-      desc: "Botanical Garden, Ramboda Falls, Tea Garden & Factory tour."
+      desc: "Gem Museum, Tea Garden & Factory tour, Ramboda Falls."
     },
     {
-      day: "Days 6 & 7",
-      title: "Colombo / Near Airport",
+      day: "Day 6",
+      title: "Colombo",
       stay: "Marino Beach Colombo, Kingsbury Colombo or Grandbell Hotel (1 Night, Half Board)",
-      coords: [7.1808, 79.8841],
-      desc: "Scenic drive down from the hills, overnight near the airport & departure transfer."
+      coords: [6.9271, 79.8612],
+      desc: "Scenic mountain drive, 1.5-hour Colombo City Tour & hotel check-in."
+    },
+    {
+      day: "Day 7",
+      title: "Negombo / Departure",
+      stay: "Departure Transfer",
+      coords: [7.2083, 79.8358],
+      desc: "Transfer to Bandaranaike International Airport in Negombo for departure flight home."
     }
   ];
 
